@@ -1,0 +1,11 @@
+This is the Arktos Execution Engine, as produced by A. Karagiannis's MSc thesis, 2007 at Univ. Ioannina. 
+It's main purpose is to allow the DBA to execute an ETL scenario.
+The tool requires Win 32 to run. Moreover, it is not linked to the Arktos Designer Module.
+
+All the necessary material can be found at
+http://www.cs.uoi.gr/~pvassil/publications/2011_QDB/
+Plz. read the usage instrucitons too.
+
+The following code is presented on-line to allow the reproduction of results by others. We would like to to clearly state that we simply cannot support any requests for the maintainance of the code, or clarifications, explanations etc. Morover, we do not assume any responsibility for any side effects of the code (although we cannot think of, or have ever encountered, any). You are free to reuse the following code for academic purposes, provided you give the appropriate citation:
+
+Macro-level Scheduling of ETL Workflows. Anastasios Karagiannis, Panos Vassiliadis, Alkis Simitsis. 9th International Workshop on Quality in Databases (QDB 2011), in conjunction with VLDB 2011, August 29th, 2011, Seattle, USA. Source code, datasets, presentations available at http://www.cs.uoi.gr/~pvassil/publications/2011_QDB/

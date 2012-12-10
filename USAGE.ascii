@@ -1,0 +1,15 @@
+Usage
+
+1. Open a scenario using the 'open' tool; alternatively, you can author a new scenario by using the 'new' button
+2. Once a scenario is there, press the 'Launch'button (button with a picture of mountains and sun). Then, you have two areas to work with.
+
+3. Left area: "Loading" area. 
+3.1 From the top left, drop-down listbos you can pick a scenario that will be analyzed and used.
+3.2. Configure all the details on the scheduling mechanism and sizes for time slot, queues, row packs etc
+3.3. Press Load
+
+4. Middle and right area: "Execution" area
+4.1 If all has gone well, a scenario has been loaded in the top box. If you clik on it, the bottom boxes are filled with its execution items: activities and recordsets. If you click on any of these, their information is shown on the right part of the screen.
+4.2 Press execute :)
+
+5. Watch on the dos window for the diagnostics of the execution.

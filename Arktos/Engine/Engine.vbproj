@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61A78A30-AB89-4D40-8617-2A7E1B122CB1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Engine.MainForm</StartupObject>
+    <RootNamespace>Engine</RootNamespace>
+    <AssemblyName>Arktos</AssemblyName>
+    <MyType>Console</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Arktos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Arktos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Devices" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Threading" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\ArktosConsole.Designer.vb">
+      <DependentUpon>ArktosConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ArktosConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EditorForm.Designer.vb">
+      <DependentUpon>EditorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LoadForm.Designer.vb">
+      <DependentUpon>LoadForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LoadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physical\PSDeriveFunc.vb" />
+    <Compile Include="Physical\Unary\Currency.vb" />
+    <Compile Include="Physical\Unary\DateKey.vb" />
+    <Compile Include="Physical\LIDeriveFunc.vb" />
+    <Compile Include="Physical\Unary\PhoneFormat.vb" />
+    <Compile Include="Tools\Aggregate.vb" />
+    <Compile Include="Tools\EngineCore.vb" />
+    <Compile Include="Tools\DataQueue.vb" />
+    <Compile Include="Tools\Evaluator-1T.vb" />
+    <Compile Include="Tools\Evaluator-2T.vb" />
+    <Compile Include="Tools\HighPerfCounter.vb" />
+    <Compile Include="Tools\Messaging.vb" />
+    <Compile Include="Physical\Unary\Aggregator.vb" />
+    <Compile Include="Physical\Other\ExecutionItem.vb" />
+    <Compile Include="Execution\ArktosScheduler.vb" />
+    <Compile Include="Tools\DataTools\CreateLookUp.vb" />
+    <Compile Include="Physical\Unary\Filter.vb" />
+    <Compile Include="Execution\Monitor.vb" />
+    <Compile Include="Physical\Other\FunctionActivity.vb" />
+    <Compile Include="Physical\Unary\GenericActivity.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Execution\Optimizer.vb" />
+    <Compile Include="Physical\Binary\NLJ.vb" />
+    <Compile Include="Physical\Other\RecordSet.vb" />
+    <Compile Include="Physical\Binary\SMDiff.vb" />
+    <Compile Include="Physical\Binary\SMJoin.vb" />
+    <Compile Include="Physical\Binary\SMSKey.vb" />
+    <Compile Include="Tools\Proxies.vb" />
+    <Compile Include="Tools\RowPack.vb" />
+    <Compile Include="Tools\VBSorter.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\ArktosConsole.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ArktosConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LoadForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Constructs\Constructs.vbproj">
+      <Project>{C3FA43A2-ED92-447C-9517-4B218E4BF325}</Project>
+      <Name>Constructs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loader\Loader.vbproj">
+      <Project>{ACFF8A51-A403-4126-855E-98010D3E2A61}</Project>
+      <Name>Loader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\Graphics\MainIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
